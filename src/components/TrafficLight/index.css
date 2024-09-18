@@ -1,0 +1,96 @@
+.traffic-light-system {
+  text-align: center;
+  background-image: url('https://www.swarco.com/sites/default/files/public/styles/head_banner/public/hero/image/2018-11/website_keyvisual_intersection2.jpg?itok=uCLw7WKF');
+  height: 100vh;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.traffic-light {
+  width: 90px;
+  height: 200px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 1s;
+  margin-left: 15px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+button:hover {
+  background-color: blanchedalmond;
+}
+
+.greencountdown {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #068a0f;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.yellowcountdown {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #eeee28;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.redcountdown {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ee0d0d;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.disable {
+  display: none;
+}
+.pedestrian-alert {
+  margin-top: 10px;
+  font-size: 18px;
+  color: red;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
